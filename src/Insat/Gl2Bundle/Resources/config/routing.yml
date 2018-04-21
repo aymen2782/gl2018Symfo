@@ -1,0 +1,27 @@
+todo_list:
+    path:     /list
+    defaults: { _controller: InsatGl2Bundle:Default:index }
+
+new_todo:
+    path:     /cc/add/{cle}/{valeur}
+    defaults: { _controller: InsatGl2Bundle:Default:addTodo }
+
+insat_gl2_test:
+    path:     /cc/{param}
+    defaults: { _controller: InsatGl2Bundle:Default:test }
+index:
+    path:     /todo
+    defaults: { _controller: InsatGl2Bundle:Todo:index }
+
+add_todo:
+    path:     /todo/add/{cle}/{valeur}
+    defaults: { _controller: InsatGl2Bundle:Todo:addTodo }
+
+accueil:
+    path:     /accueil
+    defaults: { _controller: InsatGl2Bundle:Todo:accueil }
+
+
+testh:
+    path:     /testh
+    defaults: { _controller: InsatGl2Bundle:Todo:testh }

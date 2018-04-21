@@ -1,0 +1,7 @@
+insat_gl2:
+    resource: "@InsatGl2Bundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
