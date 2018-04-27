@@ -25,3 +25,15 @@ accueil:
 testh:
     path:     /testh
     defaults: { _controller: InsatGl2Bundle:Todo:testh }
+
+add:
+    path:     /add
+    defaults: { _controller: InsatGl2Bundle:Personne:add }
+
+show_personnes:
+    path:     /show
+    defaults: { _controller: InsatGl2Bundle:Personne:show }
+
+update_personnes:
+    path:     /update/{id}
+    defaults: { _controller: InsatGl2Bundle:Personne:updatePersonne }

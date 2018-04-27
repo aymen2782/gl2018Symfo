@@ -130,6 +130,17 @@
                     </ol>
                 </div>
             </div><!-- /.row -->
+            {% for message in app.session.flashbag.get('error') %}
+                <div class="alert alert-danger">
+                    {{ message }}
+                </div>
+            {% endfor %}
+
+            {% for message in app.session.flashbag.get('success') %}
+                <div class="alert alert-success">
+                    {{ message }}
+                </div>
+            {% endfor %}
             {% block body %}
                 Je suis la page mere
             {% endblock %}
