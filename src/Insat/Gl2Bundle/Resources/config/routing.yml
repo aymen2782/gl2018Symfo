@@ -37,3 +37,10 @@ show_personnes:
 update_personnes:
     path:     /update/{id}
     defaults: { _controller: InsatGl2Bundle:Personne:updatePersonne }
+show_form:
+    path:     /showForm/{id}
+    defaults: { _controller: InsatGl2Bundle:Club:showForm }
+
+list_clubs:
+    path:     /listClubs
+    defaults: { _controller: InsatGl2Bundle:Club:listClubs }
